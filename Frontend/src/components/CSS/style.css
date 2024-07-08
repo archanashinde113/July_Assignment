@@ -1,0 +1,234 @@
+@media (min-width: 768px) {
+    .img-proj {
+      display: flex;
+      align-items: center; /* Centers items vertically */
+      justify-content: center; /* Centers items horizontally */
+      flex-direction: column;
+      height: 100vh; 
+    }
+  }
+  
+
+.img-proj1 {
+    margin: 2vh;
+}
+
+.logincard {
+    width: 400px;
+    padding: 40px;
+}
+
+.bglogin {
+    height: 67vh;
+    background-image: url('../image/login-bg-1.svg');
+    /* Relative path from CSS file */
+    background-size: cover;
+    /* Ensure the image covers the container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+
+}
+
+.headerbg {
+    height:  19vh;
+    background-image: url('../image/Header-bg.svg');
+    /* Relative path from CSS file */
+    background-size: cover;
+    /* Ensure the image covers the container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    
+}
+
+
+
+.logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message {
+    color: red;
+    /* Set text color to red */
+    text-align: center;
+    /* Center the text horizontally */
+    margin-top: 10px;
+    /* Optional: Add some space above the message */
+}
+
+.dashbg {
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5);
+    /* Add a subtle grey shadow */
+}
+
+.left-text {
+    margin-right: auto;
+    /* Push the text to the left */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.center-image {
+    margin-right: auto;
+}
+
+.logoimg1 {
+    
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.logcol {
+    display: flex;
+    justify-content: center;
+}
+
+.counter_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust spacing between cards */
+}
+
+.counter_card .count_card_style {
+    flex: 1 1 100px; /* Example size; adjust as needed */
+    min-width: 150px; /* Minimum width to prevent cards from shrinking too much */
+    max-width: 300px; /* Maximum width to ensure cards do not grow too wide */
+  }
+  
+  @media (max-width: 768px) {
+    .counter_card {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  }
+
+  .text-bold{
+    font-weight: bold;
+  }
+
+  .cardlist{
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5);
+  }
+
+  .btnc{
+    border: 2px solid #0056b3;
+  }
+
+  .btnc:hover,
+.btnc:focus {
+  border: 2px solid #0056b3;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #999;
+}
+
+input[type="text"] {
+  padding-left: 30px; 
+}
+
+
+.sort-by-container {
+  flex: 1; 
+}
+
+.sort-by-container select {
+  width: 100%; 
+  max-width: 200px; 
+  margin-left: auto; 
+}
+
+@media (max-width: 768px) {
+  .sort-by-container {
+    margin-left: 0; 
+  }
+}
+
+
+/*  */
+
+.project-list_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .project-list_mobile {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .desktop_table{
+      display: none;
+    }
+  }
+  
+  .project-row {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-name {
+    flex: 1;
+    text-align: left;
+  }
+
+  .project-status {
+    flex: 1;
+    text-align: right;
+  }
+
+  .project-row div {
+    margin-bottom: 5px;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .custom-btn {
+    margin-right: 5px;
+  }
+}
+
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  font-weight: bold;
+}
+
+.pagination span {
+  margin: 0 5px;
+}
