@@ -11,12 +11,11 @@ import createprojectactive from './image/create-project.svg';
 import logo from './image/Logo.svg';
 import { useNavigate } from 'react-router-dom';
 import logout from './image/Logout.svg';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 accessibility(Highcharts);
-
 const Dashboard = () => {
-  
-
   const [chartData, setChartData] = useState([]);
   const [counters, setCounters] = useState({});
   const [runningDelayed, setRunningDelayed] = useState(0);

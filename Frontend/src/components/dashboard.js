@@ -201,8 +201,9 @@ const AddProject = () => {
                     onChange={(e) => setDepartment(e.target.value)}
                     required
                   >
-                    <option value="Statergy">Statergy</option>
-                    <option value="Banking">Finance</option>
+                    <option value="">Statergy</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Finance">Finance</option>
                     <option value="Quality">Quality</option>
                     <option value="Non-IT">Non-IT</option>
                     <option value="HR">HR</option>
